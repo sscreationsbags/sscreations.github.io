@@ -1,0 +1,425 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+@font-face {
+    font-family: 'domaine';
+    src: url(../fonts/test-domaine-display-narrow-medium.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'ogg';
+    src: url(../fonts/Ogg.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'messina';
+    src: url(../fonts/MessinaSans-Regular.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url(../fonts/test-soehne-buch.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-reg';
+    src: url(../fonts/font_saol/SaolDisplay-Regular.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-med';
+    src: url(../fonts/font_saol/SaolDisplay-Medium.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-bold';
+    src: url(../fonts/font_saol/SaolText-Bold.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-light';
+    src: url(../fonts/font_saol/SaolDisplay-Light.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-thin';
+    src: url(../fonts/font_saol/SaolDisplay-Thin.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-light-ita';
+    src: url(../fonts/font_saol/SaolDisplay-LightItalic.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'canela';
+    src: url(../fonts/font_canela/Canela-Regular.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'canela-thin';
+    src: url(../fonts/font_canela/Canela-Thin.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'canela-light';
+    src: url(../fonts/font_canela/Canela-Light.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fdfaf4;
+}
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-family: 'canela-thin', sans-serif;
+    color: #9a0162;
+    font-weight: bolder;
+}
+
+.heading-title {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+h2 {
+    font-family: 'canela-thin';
+    color: #242424;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: #242424;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #45062e;
+}
+
+#heading {
+    height: 126px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fafbfb;
+}
+
+img {
+    height: 250px;
+    width: 100%;
+    /*
+    overflow: hidden;
+    vertical-align: middle;
+    background-position: center;
+    background-size: cover;
+    */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    font-family: 'canela-light';
+    font-size: 30px;
+    border-top: 3px solid #9a0162;
+    border-bottom: 3px solid #9a0162;
+    /*transform: translateY(-4px);*/
+}
+
+.activepage {
+    font-weight: bolder;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 20px;
+    float: left;
+}
+
+.nav-item {
+    color: #9a0162;
+} 
+
+a {
+    cursor: pointer; 
+    position: relative;    
+    z-index: 3;     
+    padding: 1.5em;     
+    margin: -1.5em; 
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+	margin: auto;
+    display: flex;
+    margin-top: 0px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+	width: 20%;
+	margin: 3.0%;
+	min-width: 4em;
+	float: left;
+	box-shadow: 3px 4px 16px rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    background-color: #fafbfb;
+	-webkit-animation: fadeInUp .9s ease forwards;
+    -moz-animation: fadeInUp .9s ease forwards; 
+    -o-animation: fadeInUp .9s ease forwards; 
+    animation: fadeInUp .9s ease forwards;
+}
+
+.hide {
+    display: none;
+}
+
+.cards-category-heading {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'canela-thin';
+    color: #9a0162;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.card:nth-child(1) {
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-o-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.card:nth-child(2) {
+	-webkit-animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-o-animation-delay: .4s;
+	animation-delay: .4s;
+}
+
+.card:nth-child(3) {
+	-webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-o-animation-delay: .6s;
+	animation-delay: .6s;
+}
+
+.card:hover {
+	opacity: 60%;
+}
+
+.card-text {
+    transform: translateY(-3px);
+    padding: 10px 10px 10px 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #fafbfb;
+}
+
+@-webkit-keyframes fadeInUp {
+  0%   { opacity: 0; transform:translateY(5em); }
+  100% { opacity: 1; transform:translateY(0); }
+}
+@-moz-keyframes fadeInUp {
+  0%   { opacity: 0; transform:translateY(5em); }
+  100% { opacity: 1; transform:translateY(0); }
+}
+@-o-keyframes fadeInUp {
+  0%   { opacity: 0; transform:translateY(5em); }
+  100% { opacity: 1; transform:translateY(0); }
+}
+@keyframes fadeInUp {
+  0%   { opacity: 0; transform:translateY(5em); }
+  100% { opacity: 1; transform:translateY(0); }
+}
+
+.aboutus {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+}
+
+.contactus {
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+footer {
+    background-color: #9a0162;
+    font-family: 'Lato', sans-serif;
+    color: #fdfaf4;
+    margin-top: 50px;
+}
+
+.footer-area {
+    padding: 20px 20% 20px;
+}
+.footer-heading {
+    font-size: 30px;
+    font-family: 'canela-thin';
+    font-weight: bolder;
+}
+
+.footer-text {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.footer-column {
+    float: left;
+    width: 40%;
+    column-gap: 40px;
+}
+  
+  /* Clear floats after the columns */
+.footer-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.filterby {
+    width: 50%;
+    margin: auto;
+}
+
+.button-38 {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "canela-thin";
+  font-size: 1.0rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  margin: 5px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-38:hover {
+    background-color: #9a0162;
+    color: #fdfaf4;
+}
+
+.button-38:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.activebutton {
+    background-color: #9a0162;
+    color: #fdfaf4;
+}
+
+.button-38:focus-visible {
+  box-shadow: none;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 33%;
+    }
+    .navbar {
+        font-size: 23px;
+    }
+    .footer-area {
+        padding: 10px;
+    }
+    .footer-heading {
+        font-size: 20px;
+        font-family: 'canela-thin';
+    }
+    
+    .footer-text {
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+    }    
+    .aboutus {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        text-align: justify;
+    }
+    .cards-category-heading {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}

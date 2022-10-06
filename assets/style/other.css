@@ -1,0 +1,197 @@
+
+@font-face {
+    font-family: 'domaine';
+    src: url(../fonts/test-domaine-display-narrow-medium.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'ogg';
+    src: url(../fonts/Ogg.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'messina';
+    src: url(../fonts/MessinaSans-Regular.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'soehne';
+    src: url(../fonts/test-soehne-buch.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-reg';
+    src: url(../fonts/font_saol/SaolDisplay-Regular.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-med';
+    src: url(../fonts/font_saol/SaolDisplay-Medium.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-bold';
+    src: url(../fonts/font_saol/SaolText-Bold.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-light';
+    src: url(../fonts/font_saol/SaolDisplay-Light.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-thin';
+    src: url(../fonts/font_saol/SaolDisplay-Thin.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'saol-light-ita';
+    src: url(../fonts/font_saol/SaolDisplay-LightItalic.woff2);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'canela';
+    src: url(../fonts/font_canela/Canela-Regular.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'canela-thin';
+    src: url(../fonts/font_canela/Canela-Thin.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+@font-face {
+    font-family: 'canela-light';
+    src: url(../fonts/font_canela/Canela-Light.otf);
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    font-style: swap;
+}
+
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fdfaf4;
+}
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-family: 'canela-thin', sans-serif;
+    color: #9a0162;
+    font-weight: bolder;
+}
+
+.heading-title {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+h2 {
+    font-family: 'saol-light';
+    color: #242424;
+}
+
+h3 {
+    font-family: 'soehne';
+    font-weight: 100;
+    color: #242424;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'soehne', sans-serif;
+}
+
+#heading {
+    height: 126px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fafbfb;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    font-family: 'canela-light';
+    font-size: 30px;
+    border-top: 3px solid #242424;
+    border-bottom: 3px solid #242424;
+    /*transform: translateY(-4px);*/
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer; 
+    position: relative;    
+    z-index: 3;     
+    padding: 2em;     
+    margin: -2em; 
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        font-size: 23px;
+    }
+}
+
+.aboutus {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    text-align: justify;
+}
+
